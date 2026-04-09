@@ -1,0 +1,15 @@
+.productImage {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.productContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+
+.productInfoContainer{
+    width: 50%;
+}

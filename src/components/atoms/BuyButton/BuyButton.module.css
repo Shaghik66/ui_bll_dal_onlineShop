@@ -1,0 +1,14 @@
+.buyButton {
+  margin-top: 10px;
+  width: 110px;
+  padding: 4px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: pink;
+  font-weight: 900;
+
+  &:active {
+    transform: scale(1.1);
+  }
+}
