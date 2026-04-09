@@ -13,10 +13,10 @@ export function Nav() {
         />
       </NavLink>
 
-      <div>
-        <ul>
-          <NavLink to="/products">
-            <li>Products</li>
+      <div className={style.listContainer}>
+        <ul >
+          <NavLink to="/products" className={style.navListItem}>
+            <li >Products</li>
           </NavLink>
         </ul>
       </div>

@@ -1,7 +1,8 @@
-import { ProductsBoxes } from "../../molecules/ProductsBoxes/ProductBoxes";
-import style from "./ProductsContainer.module.css";
 import { useContext } from "react";
+import { ProductsBoxes } from "../../molecules/ProductsBoxes/ProductBoxes";
 import { MyContext } from "../../../context/context";
+import gif from "./../../../shared/gifs/loading.gif"
+import style from "./ProductsContainer.module.css";
 
 export function ProductsContainer() {
 const products = useContext(MyContext)
@@ -15,7 +16,7 @@ const products = useContext(MyContext)
           ))}
         </section>
       ) : (
-        "hi"
+        <img src={gif} alt="gif" />
       )}
     </>
   );

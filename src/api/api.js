@@ -16,7 +16,6 @@ const productApi = {
     const response = await instance.get(`/products/${id}`);
     dispatch(getOneActionCreator(response.data));
   },
-
 };
 
-export { productApi};
+export { productApi };

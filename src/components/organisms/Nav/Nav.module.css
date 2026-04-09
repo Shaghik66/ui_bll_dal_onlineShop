@@ -1,13 +1,26 @@
 .navBar {
   display: flex;
+  justify-content: center;
+  gap: 500px;
   position: sticky;
   top: 0;
   min-height: 50px;
- background: radial-gradient(circle at left, #fcddff, #ffffff);
+  background: radial-gradient(circle at left, #fcddff, #ffffff);
   z-index: 10;
-  
+
   .mainLogo {
     max-width: 100px;
   }
+}
 
+.navListItem {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.listContainer {
+  align-self: center;
 }
