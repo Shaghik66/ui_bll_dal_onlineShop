@@ -27,6 +27,7 @@
       border: 1px solid rgb(53, 53, 53);
       font-weight: 700;
       font-size: 24px;
+      cursor: pointer;
 
       &:active {
         transform: scale(0.9);
