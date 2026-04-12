@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import style from "./ProductBoxes.module.css";
 import { BuyButton } from "../../atoms/BuyButton/BuyButton";
+import { ViewProductButton } from "../../atoms/ViewProductButton/ViewProductButton";
 
 export function ProductsBoxes({ product }) {
   return (
@@ -21,7 +22,7 @@ export function ProductsBoxes({ product }) {
         </p>
         <p className={style.boxCategory}>{`Category: ${product.category}`}</p>
         <NavLink to={`/products/${product._id}`}>
-          <BuyButton />
+          <ViewProductButton />
         </NavLink>
       </div>
     </div>

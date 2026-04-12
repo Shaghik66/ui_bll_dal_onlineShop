@@ -1,3 +1,9 @@
-.image{
-max-width: 50%;
+.sliderContainer {
+  margin: 0 auto;
+}
+
+.image {
+  display: block;
+  max-width: 20%;
+  margin: 0 auto;
 }

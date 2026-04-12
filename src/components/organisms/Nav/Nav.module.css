@@ -1,7 +1,8 @@
 .navBar {
   display: flex;
   justify-content: center;
-  gap: 500px;
+  flex-wrap: wrap;
+  column-gap: 500px;
   position: sticky;
   top: 0;
   min-height: 50px;
@@ -23,4 +24,32 @@
 
 .listContainer {
   align-self: center;
+}
+
+.navListItem{
+  direction: none;
+}
+
+.cartIcon{
+  color: rgb(255, 0, 200);
+  font-size: 30px;
+}
+
+.cartCount{
+  position: absolute;
+  bottom: 24px;
+  right: -20px;
+  background-color: #fcddff;
+  border-radius: 50%;
+  padding-block: 4px;
+  padding-inline: 8px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.navList{
+  display: flex;
+  gap: 100px;
+  align-self: center;
+  position: relative;
 }

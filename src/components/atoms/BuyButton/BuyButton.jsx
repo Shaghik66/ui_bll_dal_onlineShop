@@ -1,7 +1,14 @@
-import style from "./BuyButton.module.css"
+import style from "./BuyButton.module.css";
 
-export function BuyButton(){
-    return <>
-    <button className={style.buyButton}> Buy</button>
+export function BuyButton({ findProduct, addToCart }) {
+  return (
+    <>
+      <button
+        className={style.buyButton}
+        onClick={() => addToCart(findProduct)}
+      >
+        Buy
+      </button>
     </>
+  );
 }

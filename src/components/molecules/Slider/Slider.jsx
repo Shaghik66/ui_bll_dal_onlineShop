@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { MyContext } from "../../../context/context";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import gif from "../../../shared/gifs/loading.gif";
+import gif from "../../../shared/assets/gifs/loading.gif";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,7 +15,7 @@ export function Slider() {
 
   return (
     <>
-      {products?.length ? (
+      {products.products?.length ? (
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
@@ -24,8 +24,8 @@ export function Slider() {
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
         >
-          {products?.map((product) => (
-            <SwiperSlide className={style.sliderContainer}>
+          {products.products?.map((product) => (
+            <SwiperSlide className={style.sliderContainer} key={product._id}>
               <img className={style.image} src={product.image} alt="" />
             </SwiperSlide>
           ))}

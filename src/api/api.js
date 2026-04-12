@@ -3,7 +3,7 @@ import { BASE_URL } from "../shared/constants/baseURL";
 import { getAllActionCreator } from "../store/store";
 import { getOneActionCreator } from "../store/store";
 
-const instance = axios.create({
+export const instance = axios.create({
   baseURL: BASE_URL,
 });
 

@@ -1,0 +1,12 @@
+.ViewProductButton{
+    border: none;
+    background-color: pink;
+    font-weight: 900;
+    padding: 6px;
+    margin-top: 8px;
+    border-radius: 8px;
+
+    &:active{
+        transform: scale(0.9);
+    }
+}

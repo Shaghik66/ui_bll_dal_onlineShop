@@ -1,0 +1,56 @@
+.cartBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  padding: 20px;
+  border: 0.5px solid gainsboro;
+
+  .productImage {
+    width: 6%;
+  }
+
+  .descriptionPricePart {
+    align-self: center;
+    width: 30%;
+  }
+
+  .buttonsAndCountContainer {
+    display: flex;
+    width: 20%;
+    align-self: center;
+
+    .incDecButtons {
+      height: 40px;
+      padding-inline: 14px;
+      background-color: white;
+      border-radius: 50%;
+      border: 1px solid rgb(53, 53, 53);
+      font-weight: 700;
+      font-size: 24px;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+
+    .productCount {
+      margin: 8px 8px 0px 8px;
+      font-weight: 900;
+      font-size: 20px;
+    }
+  }
+}
+
+.totalPriceP {
+  font-size: 30px;
+  text-align: end;
+  padding: 10px;
+  font-weight: 900;
+  text-shadow:
+    0 0 3px #fffdfd,
+    0 0 5px #d83bdd;
+
+  .totalPriceSpan {
+    margin-left: 8px;
+  }
+}
