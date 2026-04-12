@@ -40,6 +40,7 @@ export function CartBoxes() {
               </button>
             </div>
             <RemoveCartButton id={c._id} />
+            <p className={style.initPrice}>{c.initPrice}$</p>
           </div>
         );
       })}
@@ -52,6 +53,7 @@ export function CartBoxes() {
       ) : (
         ""
       )}
+      
     </div>
   );
 }

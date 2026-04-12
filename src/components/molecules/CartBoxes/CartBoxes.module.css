@@ -40,6 +40,12 @@
       font-size: 20px;
     }
   }
+
+  .initPrice{
+    align-self: center;
+    font-weight: 700;
+    font-size: 24px;
+  }
 }
 
 .totalPriceP {
